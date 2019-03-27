@@ -1,8 +1,8 @@
-public class ClassicBinary {
+public class ClassicBinarySearch {
 
 	public static void main(String[] args) {
 		int nums[]= {1,2,2,4,5,5};	
-		int index = findPosition(nums, 2);
+		int index = binary(nums, 2);
 		System.out.println(index);
 	}
 	
@@ -13,7 +13,7 @@ public class ClassicBinary {
 		int getMid=0;
 		while(head<=tail) {
 			mid=(head+tail)/2;
-			getMid=nums[mid];
+			getMid=array[mid];
 			if(getMid>target) {
 				tail=mid-1;
 			}else if (getMid<target) {
